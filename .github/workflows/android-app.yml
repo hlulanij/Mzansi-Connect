@@ -78,6 +78,6 @@ jobs:
           prerelease: true
           files: android-app/mzansiconnect.apk
           body: |
-            MzansiConnect for Android. It opens the live site, https://dropit-api.onrender.com, full screen.
+            MzansiConnect for Android. It opens the live site, https://mzansiconnect.onrender.com, full screen.
             Install: download `mzansiconnect.apk` on an Android phone, open it, and allow "install unknown apps" if asked.
             Preview build, signed with a preview key. Built from commit ${{ github.sha }}.

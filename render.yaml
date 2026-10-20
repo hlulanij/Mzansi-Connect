@@ -3,7 +3,7 @@
 # instance with a disk mounted at /data (set DB_PATH=/data/data.sqlite) so seller accounts and orders survive restarts.
 services:
   - type: web
-    name: dropit-api
+    name: mzansiconnect
     runtime: docker
     dockerContext: ./backend
     dockerfilePath: ./backend/Dockerfile
@@ -14,7 +14,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: PUBLIC_URL        # this site's own public address (card checkout page and webhooks use it)
-        value: https://dropit-api.onrender.com
+        value: https://mzansiconnect.onrender.com
       - key: DEMO_SEED          # loads sample sellers and listings and shows the "Preview version" banner
         value: "1"
       - key: ALLOW_MOCK_PAYMENTS # no real charges; remove once Peach credentials are set
