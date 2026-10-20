@@ -41,6 +41,8 @@ Settings are environment variables:
 
 **Free hosting resets the database on every restart.** Use a paid instance with a disk before real sellers join.
 
+For a real launch use `render.launch.yaml` (Render > New > Blueprint > Blueprint Path = `render.launch.yaml`): paid instance with a disk, no sample data, Peach payments.
+
 ## Android app
 GitHub Actions builds it on every change to `android-app/` and publishes it at
 [Releases > android](../../releases/tag/android). See `android-app/README.md`.
