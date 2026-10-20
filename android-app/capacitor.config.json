@@ -3,10 +3,10 @@
   "appName": "MzansiConnect",
   "webDir": "www",
   "server": {
-    "url": "https://mzansiconnect.onrender.com",
+    "url": "https://dropit-api.onrender.com",
     "androidScheme": "https",
     "cleartext": false,
-    "allowNavigation": ["mzansiconnect.onrender.com"],
+    "allowNavigation": ["dropit-api.onrender.com"],
     "errorPath": "offline.html"
   },
   "android": {

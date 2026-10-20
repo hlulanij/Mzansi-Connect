@@ -32,7 +32,7 @@ Settings are environment variables:
 | Variable | Purpose |
 |---|---|
 | `JWT_SECRET` | Long random string (Render generates it). Required in production. |
-| `PUBLIC_URL` | The site's public address. |
+| `PUBLIC_URL` | The site's public address. If you ever move to a new address, also change `server.url` and `allowNavigation` in `android-app/capacitor.config.json` and rebuild the app. |
 | `DEMO_SEED` | `1` loads sample data. Remove for a real launch. |
 | `ALLOW_MOCK_PAYMENTS` | `1` allows the test payment button. Remove once Peach is configured. |
 | `PEACH_ENV`, `PEACH_CLIENT_ID`, `PEACH_CLIENT_SECRET`, `PEACH_MERCHANT_ID`, `PEACH_ENTITY_ID`, `PEACH_WEBHOOK_SECRET` | Peach Payments (sandbox first). Webhook URL: `PUBLIC_URL/api/payments/peach/webhook`. |
